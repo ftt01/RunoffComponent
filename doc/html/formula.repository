@@ -1,0 +1,6 @@
+\form#0:\begin{eqnarray*} \alpha_P &=& \frac{1.49\,W\,S^{^1/_2}}{A_1\,n_P}\quad pervious area A_1\\ \alpha_I &=& \frac{1.49\,W\,S^{^1/_2}}{(A_2+A_3)\,n_I}\quad impervious area A_2 and A_3 \end{eqnarray*}
+\form#1:\begin{eqnarray*} \alpha_P &=& \frac{1.49\,W\,S^{^1/_2}}{A_1\,n_P}\quad pervious\ area\ A_1\\ \alpha_I &=& \frac{1.49\,W\,S^{^1/_2}}{(A_2+A_3)\,n_I}\quad impervious\ area\ A_2\ and\ A_3 \end{eqnarray*}
+\form#2:$W$
+\form#3:$S$
+\form#4:$n_P$
+\form#5:$n_I$
