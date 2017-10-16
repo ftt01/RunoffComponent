@@ -11,11 +11,11 @@ import org.apache.commons.math3.util.FastMath;
  *              increased by the snow melting.
  *              The <strong>alpha</strong> variable is a factor evaluated as follow:
  *              \f{eqnarray*}{
- *                      \alpha_P &= \frac{1.49\,W\,S^{^1/_2}}{A_1\,n_P}\quad \text{for pervious area $A_1$}\\
- *                      \alpha_I &= \frac{1.49\,W\,S^{^1/_2}}{(A_2+A_3)\,n_I}\quad \text{for impervious area $A_2$ and $A_3$}
+ *                      \alpha_P &=& \frac{1.49\,W\,S^{^1/_2}}{A_1\,n_P}\quad pervious\ area\ A_1\\
+ *                      \alpha_I &=& \frac{1.49\,W\,S^{^1/_2}}{(A_2+A_3)\,n_I}\quad impervious\ area\ A_2\ and\ A_3
  *              \f}
- *              where W is the width, S is the slope, $n_P$ and $n_I$ are the roughness coefficients for pervious and
- *              impervious areas.
+ *              where \f$W\f$ is the width, \f$S\f$ is the slope, \f$n_P\f$ and \f$n_I\f$ are the roughness coefficients
+ *              for pervious and impervious areas.
  *
  * @author ftt01 dallatorre.daniele@gmail.com
  * @version 0.1
