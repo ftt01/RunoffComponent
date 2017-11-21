@@ -1,4 +1,4 @@
-package org.altervista.growworkinghard.rungeKutta;
+package org.altervista.growworkinghard.jswmm;
 
 import org.apache.commons.math3.ode.FirstOrderDifferentialEquations;
 import org.apache.commons.math3.util.FastMath;
