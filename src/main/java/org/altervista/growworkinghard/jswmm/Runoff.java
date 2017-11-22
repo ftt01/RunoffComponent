@@ -74,8 +74,8 @@ public class Runoff {
 
     @Execute
     public void run(){
-        //infiltration method
-        //groundwater method
+        //infiltration method(i, e)
+        //groundwater method(i)
         odeSolver.integrate(initialTime, outputValues, finalTime, outputValues);
     }
 
