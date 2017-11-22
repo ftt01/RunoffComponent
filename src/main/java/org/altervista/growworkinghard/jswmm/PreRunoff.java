@@ -1,4 +1,7 @@
 package org.altervista.growworkinghard.jswmm;
 
-public class PreRunoff {
+class PreRunoff {
+    adaptRunoffStep();
+    evaluateRainfall();
+    evaluateEvaporation();
 }
