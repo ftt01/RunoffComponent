@@ -1,4 +1,4 @@
-package org.altervista.growworkinghard.jswmm;
+package org.altervista.growworkinghard.jswmm.runoff;
 
 import oms3.annotations.*;
 
@@ -11,23 +11,23 @@ import org.apache.commons.math3.ode.nonstiff.DormandPrince54Integrator;
 @Status(Status.DRAFT)
 @License("GPL3.0")
 
-public class DormandPrince54 extends AbstractRunoffSolver{
+public class DormandPrince54 extends AbstractRunoffMethod {
 
     @Description("Precipitation data")
     @In
-    private double precipitation;
+    private Double precipitation;
 
     @Description("Constant depth factor")
     @In
-    private double depthFactor;
+    private Double depthFactor;
 
     @Description("Initial time")
     @In
-    private double initialTime;
+    private Double initialTime;
 
     @Description("Final time")
     @In
-    private double finalTime;
+    private Double finalTime;
 
     @Description("Initial value")
     @In
@@ -35,7 +35,7 @@ public class DormandPrince54 extends AbstractRunoffSolver{
 
     @Description("Output step size")
     @In
-    private double outputStepSize = 0.0;
+    private Double outputStepSize = 0.0;
 
     @Description("Output values")
     @Out
@@ -46,9 +46,9 @@ public class DormandPrince54 extends AbstractRunoffSolver{
 
     private FirstOrderDifferentialEquations ode;
 
-    protected DormandPrince54(double precipitation, double depthFactor,
-                              double minimumStepSize, double maximumStepSize,
-                              double absoluteTolerance, double relativeTolerance) {
+    protected DormandPrince54(Double precipitation, Double depthFactor,
+                              Double minimumStepSize, Double maximumStepSize,
+                              Double absoluteTolerance, Double relativeTolerance) {
 
         this.precipitation = precipitation;
         this.ode = new RunoffODE(precipitation,depthFactor);
@@ -56,8 +56,9 @@ public class DormandPrince54 extends AbstractRunoffSolver{
                 absoluteTolerance, relativeTolerance);
     }
 
-    double[] integrate(double initialTime, double[] inputValues,
-                       double finalTime, double[] outputValues){
+    double[] integrate(Double initialTime, double[] inputValues,
+                       Double finalTime, double[] outputValues){
+
         dp54.integrate(ode, initialTime, inputValues, finalTime, outputValues);
         return outputValues;
     }
